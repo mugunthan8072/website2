@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>All Products</h2>
+      <select>
+        <option value="">Default Shorting</option>
+        <option value="">Short by price</option>
+        <option value="">Short by popularity</option>
+        <option value="">Short by rating</option>
+        <option value="">Short by sale</option>
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img src="https://i.ibb.co/47Sk9QL/product-1.jpg" alt="" />
+        <h4>Red Printed T-shirt</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>₹500.00</p>
+        <button class="add-to-cart" onclick="addToCart('Red Printed T-shirt', 500.00)">Add to Cart</button>
+      </div>
+
+      <div class="col-4">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+        <h4>Shoe</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>₹1500.00</p>
+        <button class="add-to-cart" onclick="addToCart('Shoe', 1500.00)">Add to Cart</button>
+      </div>
+
+      <div class="col-4">
+        <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="" />
+        <h4>T-shirt</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>₹300.00</p>
+        <button class="add-to-cart" onclick="addToCart('T-shirt', 300.00)">Add to Cart</button>
+      </div>
+
+      <div class="col-4">
+        <img src="https://images.unsplash.com/photo-1619976442556-210d9a914669?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJvbGV4fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" />
+        <h4>Rolexs</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>₹4440.00</p>
+        <button class="add-to-cart" onclick="addToCart('Rolexs', 4440.00)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Add other product rows as needed -->
+
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
